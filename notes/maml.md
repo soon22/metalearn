@@ -162,7 +162,7 @@ Implementation :
 
 [Result](https://openai.com/blog/reptile/)
 
-<img src="images/reptile-chart.PNG" width="500"/>
+<img src="images/reptile-chart.png" width="500"/>
 
 * Reptile performs much better when compared to model pre-training
 
