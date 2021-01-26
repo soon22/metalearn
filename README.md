@@ -6,8 +6,8 @@ From [Machine Learning course](http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.
 * [Optimization-based Meta Learning](notes/maml.md)
     * Model Agnostic Meta Learning (MAML) 
     * Reptile
-* Gradient Descent as LSTM
-* Metric-based Meta Learning  
+* [Gradient Descent as LSTM](notes/lstm.md)
+* [Metric-based Meta Learning](notes/metric.md) 
 
 ### Additional Information
 
