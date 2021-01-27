@@ -58,7 +58,7 @@
     * N classes, one or few examples per class
 * Prototypical network uses an embedding function *f* to encode each face image into lower dimensional embedding vector
 
-<img src="images/m7.PNG" width="500"/>
+<img src="images/m7.png" width="500"/>
 
 * Calculate an average embedding vector for each class, the mean vectors are called prototypes, denoted by *c*
 
