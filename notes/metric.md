@@ -48,13 +48,56 @@
 
 ## Prototypical Network
 
+* Paper link : https://arxiv.org/abs/1703.05175
+* Network structure :
+
+<img src="images/m11.PNG" width="400"/>
+
 * What if we have more than 2 person we want to compare ?
 * N-way few-shot/one-shot learning problem
-    * N different person, 1 or few examples per person
+    * N classes, one or few examples per class
+* Prototypical network uses an embedding function *f* to encode each face image into lower dimensional embedding vector
 
+<img src="images/m7.PNG" width="500"/>
 
+* Calculate an average embedding vector for each class, the mean vectors are called prototypes, denoted by *c*
+
+<img src="images/m8.PNG" width="250"/>
+
+* Prototypical Networks produce a distribution
+over classes for a query point x based on a **softmax** over distances to the prototypes in the embedding space
+
+<img src="images/m9.PNG" width="250"/>
+
+where *d* is a differentiable distance function to measure similarity between embedding vector
+* Loss function :
+
+<img src="images/m10.PNG" width="200"/>
 
 ## Matching Network
 
+* Paper link : https://arxiv.org/abs/1606.04080
+* Network structure :
+
+<img src="images/m12.PNG" width="400"/>
+
+* Similar to Prototype Networks
+* For Prototype Networks, there's no connection between different training examples 
+* Replace CNN with Bidirectional LSTM
+* Considering the relationship among the training examples
+
 ## Relation Network
 
+* Paper link : https://arxiv.org/abs/1711.06025
+* Network structure :
+
+<img src="images/m13.PNG" width="600"/>
+
+* Similar to Siamese Network, but doesn't use any distance function to measure similarity
+* Function *f* encodes images into embedding vectors
+* Concatenate each of the embedding vectors of training images with the embedding vector of test image
+* Relation module consists of a CNN classifier *g* which predicts relation score for each pair
+* The loss function uses MSE instead of cross entropy because predicting relation score is a regression task
+* Loss function :
+
+<img src="images/m14.PNG" width="250"/>
